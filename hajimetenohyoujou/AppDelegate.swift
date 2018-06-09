@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  hajimetenohyoujou
-//
-//  Created by BAN Jun on 2018/06/09.
-//  Copyright © 2018 banjun. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
