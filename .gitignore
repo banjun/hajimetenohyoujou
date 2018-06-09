@@ -24,4 +24,4 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 
-
+**/AppIcon.appiconset/*.png

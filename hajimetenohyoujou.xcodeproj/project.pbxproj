@@ -74,6 +74,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA96818C20CBA468007B9133 /* Build configuration list for PBXNativeTarget "hajimetenohyoujou" */;
 			buildPhases = (
+				EAABD66720CC13DE00E6F276 /* App Icon */,
 				EA96817420CBA467007B9133 /* Sources */,
 				EA96817520CBA467007B9133 /* Frameworks */,
 				EA96817620CBA467007B9133 /* Resources */,
@@ -133,6 +134,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EAABD66720CC13DE00E6F276 /* App Icon */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "App Icon";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ICON=\"${SRCROOT}/hajimetenohyoujou/Assets.xcassets/AppIcon.appiconset/icon_512.png\"\necho $ICON\nif [ ! -f \"${ICON}\" ]; then\ncurl 'https://img-sketch.pixiv.net/uploads/medium/file/3475712/3272396871801950838.jpg' > \"${ICON}\" && sips -z 180 180 \"${ICON}\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA96817420CBA467007B9133 /* Sources */ = {
